@@ -1,0 +1,1 @@
+# Multi-module SBT template application
