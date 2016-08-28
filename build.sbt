@@ -14,7 +14,7 @@ lazy val testDependencies = Seq(
 
 def initProject(project: Project) : Project = project
   .configure(initSourceDirs)
-  .settings(name := project.base.name)
+  .settings(name := project.base.getAbsoluteFile.name)
   .settings(commonSettings: _*)
 
 def initSourceDirs(project: Project) : Project = {

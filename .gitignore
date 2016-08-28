@@ -1,9 +1,9 @@
 /**/bin/
 /**/target/
+/**/.settings/
+/**/.classpath
+/**/.project
 /project/
 /.idea/
-/.settings/
-/.classpath
-/.project
 /*.iml
 *.log*
