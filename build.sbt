@@ -28,7 +28,7 @@ def initSourceDirs(project: Project) : Project = {
     "src/test/scala",
     "src/test/resources"
   )
-  (sourceMainDirs ++ sourceTestDirs).map(new File(project.base, _)).foreach(_.mkdirs)
+  (sourceMainDirs ++ sourceTestDirs).map(new File(project.base.getAbsoluteFile, _)).foreach(_.mkdirs)
   project
 }
 
